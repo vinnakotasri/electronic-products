@@ -1,0 +1,95 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-9">
+  
+  <div class="myimg">
+      <img src="/assets/Instagram.jpg" class="sid"height="600"width="1500">
+      <button class="bk"><a routerLink="/user/shopping/" class="book">Shop Now</a></button>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <h1>Products</h1>
+      <ng-container *ngFor="let p of product">
+          <div class="col-md-4 sd2" *ngIf="p.productName=='home'">
+              <div class="card">
+                  <div class="card-header">
+                      <img [src]="p.productImage" class="=card-img-top" height="200" width="250">
+                  </div>
+                  <div class="card-body">
+                      <h4 class="card-text">{{p.productPrice | currency:'INR'}}</h4>
+                      <p class="sd1">{{p.productOffer}}</p>
+                  </div>
+                  <div>
+                      <button class="btn btn-primary"> <i class="fas fa-shopping-cart"></i >Add to cart</button>
+                          
+                  </div>
+              </div>
+          </div>
+
+      </ng-container>
+    </div>
+    <div class="container" id="other-cards">
+        <div class="rows">
+            <div class="col-md-6 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-2ahjzMqUuR4AktFRqSuw90UQcEWeRL2R1scLrX4qtA&s"class="myimg1"height="320"width="648">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="other-cards">
+        <div class="rows">
+            <div class="col-md-6 py-3 py-md-0">
+                <div class="card1">
+                    <img src="https://static.vecteezy.com/system/resources/previews/010/170/334/non_2x/3d-illustration-of-beige-headphones-on-monochrome-isolated-background-headphone-icon-illustration-photo.jpg" class="myimg2"height="320"width="645">
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container" id="offer">
+        <div class="row">
+            <div class="col-md-3 py-3 py-md-0">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h3>Free shipping</h3>
+                <p>On order over $1000</p>
+            </div>
+            <div class="row1">
+                <div class="col-md-3 py-3 py-md-0">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    <h3>Returns</h3>
+                    <p>with in 7days</p>
+                </div>
+                <div class="row2">
+                    <div class="col-md-3 py-3 py-md-0">
+                        <i class="fa-solid fa-truck"></i>
+                        <h3>Fast Delivery</h3>
+                        <p>Worls Wide</p>
+                    </div>
+                    <div class="row3">
+                        <div class="col-md-3 py-3 py-md-0">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <h3>Big choice</h3>
+                            <p>Of products</p>
+                        </div>
+                        
+            
+         
+    
+        </div>
+    </div>
+    <div class="container"id="newlater">
+        <h3 class="myh3">Subscribe To The Electronic Shop For Latest Upload.</h3>
+        <div class="input text-center">
+<input type="text" placeholder="Enter Your Email">
+<button id="Subscribe">Subscribe</button>
+        </div>
+    </div>
+      
+

@@ -1,0 +1,36 @@
+ <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1>Add Products</h1>
+            <form action="" (ngSubmit)="addProducts()">
+            <div class="form-group">
+                <label class="form-label">product Id</label>
+                   <input type="text" class="form-control" name="pid" [(ngModel)]="productId">               
+            </div>
+            <div class="form-group">
+                <label class="form-label">Product Name</label>
+                   <input type="text" class="form-control" name="ename" [(ngModel)]="productName">               
+            </div>
+            <div class="form-group">
+                <label class="form-label">Product Company</label>
+                   <input type="text" class="form-control" name="company" [(ngModel)]="productCompany">               
+            </div>
+            <div class="form-group">
+                <label class="form-label">Product Price</label>
+                   <input type="text" class="form-control" name="price" [(ngModel)]="productPrice">               
+            </div>
+            <div class="form-group">
+                <label class="form-label">Product Description</label>
+                   <input type="text" class="form-control" name="des" [(ngModel)]="productDescription">               
+            </div>
+            <div class="form-group">
+                <label class="form-label">Product Image</label>
+                   <input type="text" class="form-control" name="image" [(ngModel)]="productImage">               
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <button class="btn btn-warning" type="reset">Cancel</button>
+        </form>
+        </div>
+    </div>
+</div>
+
